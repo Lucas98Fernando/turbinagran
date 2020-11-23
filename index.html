@@ -19,9 +19,8 @@
 
 <body>
 
-    <div class="container">
-
-        <nav class="navbar navbar-expand-lg navbar-light py-4">
+    <nav class="navbar navbar-expand-lg navbar-light py-4">
+        <div class="container">
             <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
@@ -37,18 +36,18 @@
                         <a class="nav-link" href="#services">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Clientes</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
                 </ul>
-                <button class="btn btn-primary">Entrar</button>
+                <button class="btn btn-primary btn-login">Entrar</button>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
-    <header id="masterhead" class="masterhead">
+    <header id="masterhead" class="masterhead p-2">
         <div class="container">
             <div class="row d-flex jutify-content-center align-items-center">
 
@@ -56,12 +55,12 @@
                     <img class="img-fluid" src="img/social.png" alt="Mídias Sociais">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 content-header">
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                     <h1 class="title-header">Turbinagran</h1>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam labore
                         molestiae aut tenetur excepturi blanditiis nemo illo incidunt placeat.</p>
-                    <a href="#services" class="btn btn-primary">Saiba mais</a>
+                    <a href="#services" class="btn btn-primary btn-header">Saiba mais</a>
                 </div>
 
             </div>
@@ -70,6 +69,12 @@
 
     <section id="services" class="services">
         <div class="container">
+
+            <!-- 
+                <div class="img-float">
+                    <img src="img/instagram.png">
+                </div>
+            -->
             <div class="row text-center">
 
                 <div class="col-md-4">
@@ -105,20 +110,20 @@
                     <h2 class="font-weight-bold">Turbinagran</h2>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam labore.
                     </p>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accordionOne">
 
                         <div class="card">
                             <div class="card-header bg-primary" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link text-white" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Grupo de itens colapsável #1
+                                        Grupo de itens colapsável <i class="fas fa-plus px-2"></i>
                                     </button>
                                 </h5>
                             </div>
 
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
+                                data-parent="#accordionOne">
                                 <div class="card-body text-muted">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.
                                 </div>
@@ -131,13 +136,13 @@
                                     <button class="btn btn-link collapsed text-white" type="button"
                                         data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                        Grupo de itens colapsável #2
+                                        Grupo de itens colapsável <i class="fas fa-plus px-2"></i>
                                     </button>
                                 </h5>
                             </div>
 
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
+                                data-parent="#accordionOne">
                                 <div class="card-body text-muted">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.
                                 </div>
@@ -147,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 mr-auto order-first order-md-last">
                     <img class="img-fluid" src="/img/social-networks.png" alt="">
                 </div>
             </div>
@@ -164,20 +169,20 @@
                     <h2 class="font-weight-bold">Turbinagran</h2>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam labore.
                     </p>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accordionTwo">
 
                         <div class="card">
-                            <div class="card-header bg-primary" id="headingOne">
+                            <div class="card-header bg-primary" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link text-white" type="button" data-toggle="collapse"
                                         data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                        Grupo de itens colapsável #1
+                                        Grupo de itens colapsável <i class="fas fa-plus px-2"></i>
                                     </button>
                                 </h5>
                             </div>
 
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordionExample">
+                                data-parent="#accordionTwo">
                                 <div class="card-body text-muted">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.
                                 </div>
@@ -185,18 +190,18 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-header bg-primary" id="headingTwo">
+                            <div class="card-header bg-primary" id="headingFour">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed text-white" type="button"
                                         data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                        Grupo de itens colapsável #2
+                                        Grupo de itens colapsável <i class="fas fa-plus px-2"></i>
                                     </button>
                                 </h5>
                             </div>
 
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                data-parent="#accordionExample">
+                                data-parent="#accordionTwo">
                                 <div class="card-body text-muted">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.
                                 </div>
@@ -212,9 +217,11 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-start">
-                <div class="col-md-3">
-                    <a class="navbar-brand" href="#"><img class="img-fluid" src="/img/social-media.png" alt=""></a>
+            <div class="row d-flex justify-content-center align-items-start align-content-center">
+                <div class="col-md-3 d-flex flex-column">
+                    <h3>Links úteis</h3>
+                    <a href="#"><span>Políticas de privacidade</span></a>
+                    <a href="#"><span>Termos de serviço</span></a>
                 </div>
                 <div class="col-md-3">
                     <h3>Sobre nós</h3>
@@ -238,9 +245,6 @@
                         </div>
                         <div class="icons">
                             <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                        </div>
-                        <div class="icons">
-                            <a href="#"><i class="fab fa-github fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
