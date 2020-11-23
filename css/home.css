@@ -248,6 +248,16 @@ h3 {
   color: #007BFF !important;
 }
 
+@media (max-width: 600px) {
+  .img-header {
+    width: 230px;
+  }
+
+  .content-header p {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
