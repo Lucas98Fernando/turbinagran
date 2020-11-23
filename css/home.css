@@ -89,14 +89,6 @@ section {
   position: relative;
 }
 
-.img-float {
-  position: absolute;
-  width: 10%;
-  left: 10px;
-  top: -70%;
-  opacity: 0.2;
-}
-
 .card {
   border-radius: 30px;
 }
@@ -224,7 +216,7 @@ h3 {
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.5s ease-in-out;
 }
 
 #mainNav .navbar-brand {
