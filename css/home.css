@@ -47,11 +47,9 @@ h3.section-subheading {
 }
 
 .masterhead {
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 100%
-    ),
+      rgba(255, 255, 255, 0.9) 100%),
     url("../img/pattern-social-r.png");
   background-position: center;
   background-size: cover;
@@ -71,11 +69,9 @@ h3.section-subheading {
 }
 
 .our-services {
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 100%
-    ),
+      rgba(255, 255, 255, 0.9) 100%),
     url("../img/pattern-social-midia-r.png");
   background-position: center;
   background-size: cover;
@@ -137,6 +133,10 @@ section {
 .card {
   border-radius: 30px;
   border: none;
+}
+
+.card-heading {
+  background-color: #b92796;
 }
 
 .btn-link {
@@ -237,7 +237,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #b52b65, #ed6663);
+  background: linear-gradient(to left, #6a2c87, #59277a);
   z-index: -1;
   border-radius: 50%;
   transform: translate(100%, 100%);
@@ -250,6 +250,7 @@ h3 {
 }
 
 @keyframes animate {
+
   0%,
   100% {
     width: 100%;
@@ -361,6 +362,7 @@ h3 {
   padding: 0;
   list-style: none;
 }
+
 .timeline:before {
   position: absolute;
   top: 0;
@@ -371,39 +373,46 @@ h3 {
   content: "";
   background-color: #e9ecef;
 }
-.timeline > li {
+
+.timeline>li {
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
 }
-.timeline > li:after,
-.timeline > li:before {
+
+.timeline>li:after,
+.timeline>li:before {
   display: table;
   content: " ";
 }
-.timeline > li:after {
+
+.timeline>li:after {
   clear: both;
 }
-.timeline > li .timeline-panel {
+
+.timeline>li .timeline-panel {
   position: relative;
   float: right;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.timeline > li .timeline-panel:before {
+
+.timeline>li .timeline-panel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
-.timeline > li .timeline-panel:after {
+
+.timeline>li .timeline-panel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
-.timeline > li .timeline-image {
+
+.timeline>li .timeline-image {
   position: absolute;
   z-index: 100;
   left: 0;
@@ -414,42 +423,50 @@ h3 {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #007bff;
+  background-color: #b92796;
 }
-.timeline > li .timeline-image h4 {
+
+.timeline>li .timeline-image h4 {
   font-size: 10px;
   line-height: 14px;
   margin-top: 12px;
 }
-.timeline > li.timeline-inverted > .timeline-panel {
+
+.timeline>li.timeline-inverted>.timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
-.timeline > li:last-child {
+
+.timeline>li:last-child {
   margin-bottom: 0;
 }
+
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
 }
+
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
 }
-.timeline .timeline-body > ul,
-.timeline .timeline-body > p {
+
+.timeline .timeline-body>ul,
+.timeline .timeline-body>p {
   margin-bottom: 0;
 }
 
@@ -457,70 +474,85 @@ h3 {
   .timeline:before {
     left: 50%;
   }
-  .timeline > li {
+
+  .timeline>li {
     min-height: 100px;
     margin-bottom: 100px;
   }
-  .timeline > li .timeline-panel {
+
+  .timeline>li .timeline-panel {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
-  .timeline > li .timeline-image {
+
+  .timeline>li .timeline-image {
     left: 50%;
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-  .timeline > li .timeline-image h4 {
+
+  .timeline>li .timeline-image h4 {
     font-size: 13px;
     line-height: 18px;
     margin-top: 16px;
   }
-  .timeline > li.timeline-inverted > .timeline-panel {
+
+  .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
     padding: 0 30px 20px 20px;
     text-align: left;
   }
 }
+
 @media (min-width: 992px) {
-  .timeline > li {
+  .timeline>li {
     min-height: 150px;
   }
-  .timeline > li .timeline-panel {
+
+  .timeline>li .timeline-panel {
     padding: 0 20px 20px;
   }
-  .timeline > li .timeline-image {
+
+  .timeline>li .timeline-image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
   }
-  .timeline > li .timeline-image h4 {
+
+  .timeline>li .timeline-image h4 {
     font-size: 18px;
     line-height: 26px;
     margin-top: 30px;
   }
-  .timeline > li.timeline-inverted > .timeline-panel {
+
+  .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 20px 20px;
   }
 }
+
 @media (min-width: 1200px) {
-  .timeline > li {
+  .timeline>li {
     min-height: 170px;
   }
-  .timeline > li .timeline-panel {
+
+  .timeline>li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
-  .timeline > li .timeline-image {
+
+  .timeline>li .timeline-image {
     width: 170px;
     height: 170px;
     margin-left: -85px;
   }
-  .timeline > li .timeline-image h4 {
+
+  .timeline>li .timeline-image h4 {
     margin-top: 40px;
   }
-  .timeline > li.timeline-inverted > .timeline-panel {
+
+  .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 20px;
   }
 }
@@ -546,6 +578,7 @@ h3 {
 section#contact {
   padding: 0;
 }
+
 .container-contact {
   position: relative;
   width: 100%;
@@ -571,7 +604,7 @@ section#contact {
 }
 
 .contact-form {
-  background-color: #007bff;
+  background-color: #b92796;
   position: relative;
 }
 
@@ -601,7 +634,7 @@ section#contact {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #007bff;
+  background-color: #b92796;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -673,7 +706,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #007bff;
+  color: #b92796;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -708,7 +741,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #007bff;
+  background-color: #b92796;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -740,7 +773,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #007bff;
+  color: #b92796;
 }
 
 .text {
@@ -761,41 +794,12 @@ textarea.input {
   margin-right: 0.7rem;
 }
 
-.social-media {
-  padding: 2rem 0 0 0;
-}
-
-.social-media p {
-  color: #333;
-}
-
-.social-icons-contact {
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.social-icons-contact a {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #007bff, #007bff);
-  color: #fff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
-}
-
-.social-icons-contact a:hover {
-  transform: scale(1.05);
-}
-
 .contact-info:before {
   content: "";
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #007bff;
+  border: 22px solid #b92796;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -807,7 +811,7 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #007bff, #1680f1);
+  background: linear-gradient(to bottom, #b92796, #a3265f);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -865,10 +869,6 @@ textarea.input {
   .text {
     margin: 1rem 0 1.5rem 0;
   }
-
-  .social-media {
-    padding: 1.5rem 0 0 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -892,18 +892,12 @@ textarea.input {
 
   .text,
   .information,
-  .social-media p {
+  p {
     font-size: 0.8rem;
   }
 
   .title {
     font-size: 1.15rem;
-  }
-
-  .social-icons-contact a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
   }
 
   .icon {
