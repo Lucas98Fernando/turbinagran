@@ -163,11 +163,15 @@ section {
 }
 
 .footer span,
-h3 {
+h3, a {
   color: #eceff1;
 }
 
-.footer .icons-s {
+.footer a:hover {
+  color: #fafafa;
+}
+
+.footer-item i {
   font-size: 25px;
 }
 
@@ -177,8 +181,8 @@ h3 {
   margin-bottom: 25px;
 }
 
-.footer span {
-  font-size: 14px;
+.footer-item span {
+  font-size: 16px;
   padding-bottom: 15px;
 }
 
@@ -282,7 +286,7 @@ h3 {
     font-size: 1rem;
   }
 
-  .footer-item {
+  .footer-item, .footer-icons {
     margin-bottom: 2rem;
   }
 }
