@@ -47,11 +47,9 @@ h3.section-subheading {
 }
 
 .masterhead {
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 100%
-    ),
+      rgba(255, 255, 255, 0.9) 100%),
     url("../img/pattern-social-r.png");
   background-position: center;
   background-size: cover;
@@ -71,11 +69,9 @@ h3.section-subheading {
 }
 
 .our-services {
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 100%
-    ),
+      rgba(255, 255, 255, 0.9) 100%),
     url("../img/pattern-social-midia-r.png");
   background-position: center;
   background-size: cover;
@@ -122,7 +118,11 @@ h3.section-subheading {
   }
 
   .title-header {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .navbar-light .navbar-toggler {
+    border: none;
   }
 }
 
@@ -163,7 +163,8 @@ section {
 }
 
 .footer span,
-h3, a {
+h3,
+a {
   color: #eceff1;
 }
 
@@ -263,6 +264,7 @@ h3, a {
 }
 
 @keyframes animate {
+
   0%,
   100% {
     width: 100%;
@@ -286,7 +288,8 @@ h3, a {
     font-size: 1rem;
   }
 
-  .footer-item, .footer-icons {
+  .footer-item,
+  .footer-icons {
     margin-bottom: 2rem;
   }
 }
@@ -386,23 +389,23 @@ h3, a {
   background-color: #e9ecef;
 }
 
-.timeline > li {
+.timeline>li {
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
 }
 
-.timeline > li:after,
-.timeline > li:before {
+.timeline>li:after,
+.timeline>li:before {
   display: table;
   content: " ";
 }
 
-.timeline > li:after {
+.timeline>li:after {
   clear: both;
 }
 
-.timeline > li .timeline-panel {
+.timeline>li .timeline-panel {
   position: relative;
   float: right;
   width: 100%;
@@ -410,21 +413,21 @@ h3, a {
   text-align: left;
 }
 
-.timeline > li .timeline-panel:before {
+.timeline>li .timeline-panel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
 
-.timeline > li .timeline-panel:after {
+.timeline>li .timeline-panel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
 
-.timeline > li .timeline-image {
+.timeline>li .timeline-image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -441,7 +444,7 @@ h3, a {
   background-color: #fafafa;
 }
 
-.timeline > li .timeline-image h4 {
+.timeline>li .timeline-image h4 {
   font-size: 10px;
   line-height: 14px;
   padding: 5px;
@@ -452,27 +455,27 @@ h3, a {
   background-color: #b92796 !important;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline>li.timeline-inverted>.timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
   text-align: left;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.timeline>li.timeline-inverted>.timeline-panel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.timeline>li.timeline-inverted>.timeline-panel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
 
-.timeline > li:last-child {
+.timeline>li:last-child {
   margin-bottom: 0;
 }
 
@@ -485,8 +488,8 @@ h3, a {
   text-transform: none;
 }
 
-.timeline .timeline-body > ul,
-.timeline .timeline-body > p {
+.timeline .timeline-body>ul,
+.timeline .timeline-body>p {
   margin-bottom: 0;
 }
 
@@ -495,31 +498,31 @@ h3, a {
     left: 50%;
   }
 
-  .timeline > li {
+  .timeline>li {
     min-height: 100px;
     margin-bottom: 100px;
   }
 
-  .timeline > li .timeline-panel {
+  .timeline>li .timeline-panel {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
 
-  .timeline > li .timeline-image {
+  .timeline>li .timeline-image {
     left: 50%;
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
 
-  .timeline > li .timeline-image h4 {
+  .timeline>li .timeline-image h4 {
     font-size: 13px;
     line-height: 18px;
   }
 
-  .timeline > li.timeline-inverted > .timeline-panel {
+  .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
     padding: 0 30px 20px 20px;
     text-align: left;
@@ -527,46 +530,46 @@ h3, a {
 }
 
 @media (min-width: 992px) {
-  .timeline > li {
+  .timeline>li {
     min-height: 150px;
   }
 
-  .timeline > li .timeline-panel {
+  .timeline>li .timeline-panel {
     padding: 0 20px 20px;
   }
 
-  .timeline > li .timeline-image {
+  .timeline>li .timeline-image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
   }
 
-  .timeline > li .timeline-image h4 {
+  .timeline>li .timeline-image h4 {
     font-size: 18px;
     line-height: 26px;
   }
 
-  .timeline > li.timeline-inverted > .timeline-panel {
+  .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 20px 20px;
   }
 }
 
 @media (min-width: 1200px) {
-  .timeline > li {
+  .timeline>li {
     min-height: 170px;
   }
 
-  .timeline > li .timeline-panel {
+  .timeline>li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
 
-  .timeline > li .timeline-image {
+  .timeline>li .timeline-image {
     width: 170px;
     height: 170px;
     margin-left: -85px;
   }
 
-  .timeline > li.timeline-inverted > .timeline-panel {
+  .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 20px;
   }
 }
@@ -598,11 +601,9 @@ section#contact {
   width: 100%;
   min-height: 100vh;
   padding: 5rem;
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 100%
-    ),
+      rgba(255, 255, 255, 0.9) 100%),
     url("../img/pattern-midia-r.png");
   background-position: center;
   background-size: cover;
