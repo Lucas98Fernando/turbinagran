@@ -55,7 +55,7 @@ h3.section-subheading {
     url("../img/pattern-social-r.png");
   background-position: center;
   background-size: cover;
-  
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@ h3.section-subheading {
     url("../img/pattern-social-midia-r.png");
   background-position: center;
   background-size: cover;
-  
+  background-attachment: fixed;
 }
 
 .logo {
@@ -603,7 +603,7 @@ section#contact {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
   overflow: hidden;
   display: flex;
   align-items: center;
