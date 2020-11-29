@@ -1,6 +1,20 @@
 (function ($) {
     "use strict"; // Start of use strict
 
+    $(document).ready(function () {
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function () {
+            $(this).siblings(".card-header").find(".btn i").addClass("fa-minus").removeClass("fa-plus");
+        });
+
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function () {
+            $(this).parent().find(".card-header .btn i").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function () {
+            $(this).parent().find(".card-header .btn i").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -38,21 +52,5 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-
-    // Magnific popup calls
-    $('#portfolio').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
-    });
 
 })(jQuery); // End of use strict

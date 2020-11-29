@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="img-fluid logo"
-                    src="img/logo-retangulo.png" alt="Logo"></a>
+                    src="./img/logo-retangulo.png" alt="Logo"></a>
             <button class="navbar-toggler navbar-toggler-right btn-mobile" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#our-services">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#testimonials">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contato</a></li>
-                    <button class="btn btn-primary btn-login">Entrar</button>
+                    <a onclick="login()" href="#" class="btn btn-primary btn-login hvr-sweep-to-right">Entrar</a>
                 </ul>
             </div>
         </div>
@@ -44,10 +44,11 @@
 
     <header id="masterhead" class="masterhead">
         <div class="container">
-            <div class="row d-flex jutify-content-center align-items-center">
+            <div class="row d-flex jutify-content-center align-items-center row-header">
 
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <img class="img-fluid img-header" src="img/social.png" alt="Mídias Sociais">
+                    <img class="img-fluid img-header" src="./img/social.png"
+                        alt="Mídias Sociais">
                 </div>
 
                 <div class="col-md-6 content-header">
@@ -55,7 +56,7 @@
                     <h1 class="title-header">Turbine suas redes sociais</h1>
                     <p class="text-muted">Nunca foi tão fácil aumentar o engajamento das suas redes sociais, quer saber
                         como ?</p>
-                    <a href="#our-services" class="btn btn-primary btn-header">Saiba mais</a>
+                    <a href="#how-works" class="btn btn-primary btn-header hvr-sweep-to-right">Saiba mais</a>
                 </div>
 
             </div>
@@ -71,7 +72,8 @@
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="img-fluid" src="./img/my-app.svg" alt="" />
+                    <div class="timeline-image"><img class="img-fluid"
+                            src="./img/register.png" alt="" />
                     </div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -85,47 +87,35 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="img-fluid" src="./img/social-share.svg" alt="" /></div>
+                    <div class="timeline-image"><img class="img-fluid"
+                            src="./img/send-money.png" alt="" /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Realize algumas atividades</h4>
+                            <h4 class="subheading">Recarregue sua conta</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Com sua conta carregada, você poderá contratar os serviços que mais se
+                                encaixam com o seu perfil, com um preço que cabe no seu bolso, lembrando que quanto mais
+                                você recarregar sua conta, maior serão os serviços que você poderá solicitar.</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="img-fluid" src="./img/social-girl.svg" alt="" /></div>
+                    <div class="timeline-image"><img class="img-fluid"
+                            src="./img/rocket-launch.png" alt="" /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Receba os benefícios</h4>
+                            <h4 class="subheading">Aproveite os serviços</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="img-fluid" src="./img/lauch-rocket.svg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">Você poderá contratar serviços para turbinar o seu Instagram ou
+                                Facebook, de maneira rápida e descomplicada</p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
                     <a href="#">
-                        <div class="timeline-image last-timeline">
+                        <div class="timeline-image last-timeline hvr-radial-out">
                             <h4>
                                 Comece agora mesmo
                             </h4>
@@ -146,7 +136,7 @@
                     <div class="accordion" id="accordionOne">
 
                         <div class="card">
-                            <div class="card-header card-heading" id="headingOne">
+                            <div class="card-header card-heading hvr-sweep-to-right" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link text-white" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -157,37 +147,15 @@
 
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordionOne">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="card-body text-muted">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.
+                                </div>
                             </div>
+
                         </div>
 
                         <div class="card">
-                            <div class="card-header card-heading" id="headingTwo">
+                            <div class="card-header card-heading hvr-sweep-to-right" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed text-white" type="button"
                                         data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
@@ -226,7 +194,7 @@
                     <div class="accordion" id="accordionTwo">
 
                         <div class="card">
-                            <div class="card-header card-heading" id="headingThree">
+                            <div class="card-header card-heading hvr-sweep-to-right" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link text-white" type="button" data-toggle="collapse"
                                         data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -244,7 +212,7 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-header card-heading" id="headingFour">
+                            <div class="card-header card-heading hvr-sweep-to-right" id="headingFour">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed text-white" type="button"
                                         data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
@@ -282,13 +250,15 @@
                     <div class="carousel-item active">
 
                         <div class="card text-center card-carousel">
-                            <img class="card-img-top mx-auto rounded-circle img-fluid" src="/img/people.jpg"
-                                alt="Imagem de capa do card">
+                            <img class="card-img-top mx-auto rounded-circle img-fluid"
+                                src="./img/people.jpg" alt="Imagem de capa do card">
                             <div class="card-body">
                                 <h3 class="card-title">Título do card</h3>
-                                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como
+                                <p class="card-text"><i class="fas fa-quote-left mr-2"></i>Este é um card maior com
+                                    suporte a texto embaixo, que funciona como
                                     uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o
-                                    primeiro, para mostrar a altura igual, em ação.</p>
+                                    primeiro, para mostrar a altura igual, em ação. <i
+                                        class="fas fa-quote-right ml-2"></i></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -300,13 +270,15 @@
 
                     <div class="carousel-item">
                         <div class="card text-center card-carousel">
-                            <img class="card-img-top mx-auto rounded-circle" src="img/people2.jpg"
-                                alt="Imagem de capa do card">
+                            <img class="card-img-top mx-auto rounded-circle"
+                                src="./img/people2.jpg" alt="Imagem de capa do card">
                             <div class="card-body">
                                 <h3 class="card-title">Título do card</h3>
-                                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como
+                                <p class="card-text"><i class="fas fa-quote-left mr-2"></i>Este é um card maior com
+                                    suporte a texto embaixo, que funciona como
                                     uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o
-                                    primeiro, para mostrar a altura igual, em ação.</p>
+                                    primeiro, para mostrar a altura igual, em ação. <i
+                                        class="fas fa-quote-right ml-2"></i></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -318,13 +290,15 @@
 
                     <div class="carousel-item">
                         <div class="card text-center card-carousel">
-                            <img class="card-img-top mx-auto rounded-circle" src="/img/people3.jpg"
-                                alt="Imagem de capa do card">
+                            <img class="card-img-top mx-auto rounded-circle"
+                                src="./img/people3.jpg" alt="Imagem de capa do card">
                             <div class="card-body">
                                 <h3 class="card-title">Título do card</h3>
-                                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como
+                                <p class="card-text"><i class="fas fa-quote-left mr-2"></i>Este é um card maior com
+                                    suporte a texto embaixo, que funciona como
                                     uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o
-                                    primeiro, para mostrar a altura igual, em ação.</p>
+                                    primeiro, para mostrar a altura igual, em ação. <i
+                                        class="fas fa-quote-right ml-2"></i></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -349,14 +323,13 @@
 
     <section id="contact">
         <div class="container-contact">
-            <img src="img/shape.png" class="square" alt="" />
             <div class="form">
                 <div class="contact-info">
                     <h3 class="title">Vamos conversar ?</h3>
                     <p class="text">
                         Tem algum problema, dúvidas ou sugestões ? Entre em contato com o nosso suporte.
                     </p>
-                    <img class="img-fluid" src="img/uniting-the-world.png" alt="">
+                    <img class="img-fluid" src="./img/uniting-the-world.png" alt="">
 
                 </div>
 
@@ -428,7 +401,6 @@
                 <div class="col-md-12 pt-5 text-center">
                     <span class="copyright">Copyright &copy; 2020 Turbinagran - Todos os direitos reservados.</span>
                 </div>
-
             </div>
         </div>
     </footer>
@@ -437,13 +409,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="js/contact.js"></script>
 
