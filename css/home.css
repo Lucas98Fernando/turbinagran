@@ -625,10 +625,14 @@ a {
 #headingTwo,
 #headingThree,
 #headingFour {
+  height: 50px;
+  display: flex;
+  align-items: center;
   border-radius: 20px;
 }
 
 #headingOne,
+#headingTwo,
 #headingThree {
   margin-bottom: 1rem;
 }
@@ -1122,4 +1126,102 @@ textarea.input {
 .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card {
+  flex: 1;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: 0.3s linear;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card .fa-instagram,
+.pricing-card .fa-facebook-f {
+  margin: 1rem 0;
+  font-size: 40px;
+  color: #6a2c87;
+}
+
+.pricing-card-header {
+  background-color: #b92796;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+  box-shadow: 0 0 0 20em #a3265f;
+}
+
+.price {
+  font-size: 70px;
+  color: #6a2b87;
+  margin: 40px 0;
+  transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price,
+.pricing-card:hover .fa-instagram,
+.pricing-card:hover .fa-facebook-f {
+  color: #fff;
+}
+
+.pricing-card li {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  border: 2px solid #b92796;
+  color: #a3265f;
+  padding: 18px 40px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+.order-btn:hover {
+  background-color: #b92796;
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .pricing-card {
+    flex: 50%;
+  }
+
+  .pricing-card:hover .pricing-card-header {
+    box-shadow: 0 0 0 22em #a3265f;
+  }
 }
